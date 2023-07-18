@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
 project(
-    libFreecraft
+    dimensium_base
     LANGUAGES
         C CXX
 )

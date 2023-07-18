@@ -5,7 +5,7 @@
 #include "base/definitions.hpp"
 #include <memory>
 
-namespace freecraft 
+namespace dimensium 
 {
     class Item
     {

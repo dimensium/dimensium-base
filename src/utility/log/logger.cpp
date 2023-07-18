@@ -1,7 +1,7 @@
 #include "logger.hpp"
 #include <thread>
 
-namespace freecraft 
+namespace dimensium 
 {
     Logger &Logger::operator<<(std::string str)
     {

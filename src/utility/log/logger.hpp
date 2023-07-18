@@ -3,7 +3,7 @@
 
 #include "log_queue.hpp"
 
-namespace freecraft 
+namespace dimensium 
 {
 
     class Logger

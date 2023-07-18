@@ -10,7 +10,7 @@
 #include <string>
 
 
-namespace freecraft
+namespace dimensium
 {
     //fdcl
     enum class LogMessageType : uint16
@@ -61,7 +61,7 @@ namespace freecraft
             void end(void);
     };
 
-} // namespace freecraft
+} // namespace dimensium
 
 
 

@@ -9,17 +9,17 @@
 
 #include "utility/allocation/allocator.hpp"
 
-namespace freecraft
+namespace dimensium
 {
     using namespace intent;
     using String = std::basic_string<char16_t, std::char_traits<char16_t>, allocation::JEAllocator<char16_t>>;
 }
 
-namespace freecraft::argument
+namespace dimensium::argument
 {}
-namespace freecraft::concurrency
+namespace dimensium::concurrency
 {}
-namespace freecraft::allocation
+namespace dimensium::allocation
 {}
 
 #endif // _DEFINITIONS_HPP

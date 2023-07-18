@@ -1,6 +1,6 @@
 file(
     GLOB_RECURSE
-        LIBFREECRAFT_SOURCES
+        DIMENSIUM_BASE_SOURCES
 
     *.c *.cc *.C *.cpp *.cxx
 )
@@ -17,22 +17,22 @@ set(
 
 if(${BUILD_SHARED_LIBS})
     add_library(
-        libFreecraft SHARED
-        ${LIBFREECRAFT_SOURCES}
+        dimensium_base SHARED
+        ${DIMENSIUM_BASE_SOURCES}
     )
 else()
     add_library(
-        libFreecraft
-        ${LIBFREECRAFT_SOURCES}
+        dimensium_base
+        ${DIMENSIUM_BASE_SOURCES}
     )
 endif()
 
 target_include_directories(
-    libFreecraft PUBLIC
+    dimensium_base PUBLIC
         ./
 )
 
 # doesn't have a library now
 # target_link_libraries(
-#     libFreecraft PUBLIC
+#     dimensium_base PUBLIC
 # )

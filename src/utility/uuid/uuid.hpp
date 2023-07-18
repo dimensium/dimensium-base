@@ -6,7 +6,7 @@
 #include <_mingw_stat64.h>
 #include <ostream>
 
-namespace freecraft 
+namespace dimensium 
 {
     class UUID//8-4-4-4-12 hex
     {

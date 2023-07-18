@@ -7,7 +7,7 @@
 #include <queue>
 #include <iostream>
 
-namespace freecraft 
+namespace dimensium 
 {
 
     inline char const*toTypeString(LogMessageType type)

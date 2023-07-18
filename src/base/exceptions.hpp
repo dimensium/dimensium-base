@@ -4,7 +4,7 @@
 #include "base/definitions.hpp"
 #include <exception>
 
-namespace freecraft::exceptions
+namespace dimensium::exceptions
 {
     class ExceptionBase : public std::exception
     {

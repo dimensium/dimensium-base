@@ -6,7 +6,7 @@
 //////////////////////////////////
 #define je_malloc malloc
 /////////////////////////////////
-namespace freecraft::allocation
+namespace dimensium::allocation
 {
 
 
@@ -170,7 +170,7 @@ namespace freecraft::allocation
         return false;
     }
 
-} // namespace freecraft::allocation
+} // namespace dimensium::allocation
 
 
 #endif // _ALLOCATOR_HPP

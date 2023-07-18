@@ -3,7 +3,7 @@
 #include <ostream>
 #include <random>
 
-namespace freecraft 
+namespace dimensium 
 {
     std::ostream &operator<<(std::ostream &os, UUID const&uuid)
     {

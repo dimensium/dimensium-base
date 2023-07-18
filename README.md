@@ -2,6 +2,8 @@
 
 ![](./social/freecraftSocial.png)
 
+> We're trying to rename all "Freecraft" into "Dimensium". Please notice.
+
 ## What is lib.Freecraft?
 
 The lib.Freecraft is the major project of Freecraft, it is written in C++ and it contains almost every features of Freecraft except a Frontend. Major functionalition like world generation, physics, entity, effect and numberic calculations, world state shareing through web, and many more are implememted and standerdlized by this library.

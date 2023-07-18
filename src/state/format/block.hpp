@@ -3,7 +3,7 @@
 
 #include "base/definitions.hpp"
 
-namespace freecraft 
+namespace dimensium 
 {   
     class Block
     {
