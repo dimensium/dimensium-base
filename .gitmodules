@@ -1,0 +1,3 @@
+[submodule "lib/libIntent"]
+	path = lib/libIntent
+	url = https://github.com/dimensium/libIntent.git
