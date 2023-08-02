@@ -2,7 +2,7 @@
 #define _ITEM_HPP
 
 
-#include "base/definitions.hpp"
+#include "base/base.hpp"
 #include <memory>
 
 namespace dimensium 

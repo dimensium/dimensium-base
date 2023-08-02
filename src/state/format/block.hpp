@@ -1,7 +1,7 @@
 #ifndef _BLOCK_HPP
 #define _BLOCK_HPP
 
-#include "base/definitions.hpp"
+#include "base/base.hpp"
 
 namespace dimensium 
 {   

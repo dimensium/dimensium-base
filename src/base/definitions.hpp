@@ -8,6 +8,7 @@
 #include "libIntent/intent.hpp"
 
 #include "utility/allocation/allocator.hpp"
+#include "exceptions.hpp"
 
 namespace dimensium
 {

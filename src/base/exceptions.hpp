@@ -1,54 +1,27 @@
-#ifndef _BASE_EXCEPTIONS_HPP
-#define _BASE_EXCEPTIONS_HPP
+#pragma once
 
-#include "base/definitions.hpp"
+#include <string>
 #include <exception>
+#include <source_location>
 
-namespace dimensium::exceptions
+namespace dimensium
 {
-    class ExceptionBase : public std::exception
+    class Exception
     {
-    private:
-        char const*why_;
-        uint32 error_code_;
-    public:
-        ExceptionBase(char const*why = "uncaught exception occured", uint32 error_code = 0) : why_(why), error_code_(error_code)
-        { }
-        char const*what(void) const noexcept
-        { return why_; }
-        uint32 error_code(void) const noexcept 
-        { return error_code_; }
-    };
-
-    class RuntimeException : public ExceptionBase
-    {
-    public:
-        RuntimeException(char const*why = "uncaught exception in runtime occured", uint32 error_code = 0) : ExceptionBase(why, error_code)
-        { }
-    };
-
-    class RuntimeError : public ExceptionBase
-    {
-    public:
-        RuntimeError(char const*why = "uncaught error in runtime occured", uint32 error_code = 0) : ExceptionBase(why, error_code)
-        { }
-    };
-
-    class RuntimeFatal : public ExceptionBase
-    {
-    public:
-        RuntimeFatal(char const*why = "uncaught error in runtime occured", uint32 error_code = 0) : ExceptionBase(why, error_code)
-        { }
-    };
-
-
-
-    class MemoryAllocationError : public RuntimeError
-    {
+        private:
+            std::string exception_detail;
+            std::source_location occurence_location;
         public:
-            MemoryAllocationError(char const*why_ = "memory allocation error in runtime", uint32 error_code_ = 0) : RuntimeError(why_, error_code_)
+            Exception(std::string why, std::source_location loc = std::source_location::current()) :
+                exception_detail {why},
+                occurence_location {loc}
             { }
+
+            virtual std::string detail(void) const final;
+
+            
+            virtual std::source_location location(void) const final;
     };
+    extern std::ostream &operator<<(std::ostream &os, Exception e);
 }
 
-#endif // _BASE_EXCEPTIONS_HPP

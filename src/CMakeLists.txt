@@ -30,6 +30,7 @@ endif()
 target_include_directories(
     dimensium_base PUBLIC
         ./
+        ../lib/
 )
 
 # doesn't have a library now
