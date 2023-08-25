@@ -3,7 +3,6 @@
 
 
 #include "base/base.hpp"
-#include <_mingw_stat64.h>
 #include <ostream>
 
 namespace dimensium 

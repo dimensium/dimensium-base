@@ -1,5 +1,4 @@
-#ifndef _ITEM_HPP
-#define _ITEM_HPP
+#pragma once
 
 
 #include "base/base.hpp"
@@ -34,4 +33,3 @@ namespace dimensium
 }
 
 
-#endif // _ITEM_HPP

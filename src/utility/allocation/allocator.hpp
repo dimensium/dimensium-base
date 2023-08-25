@@ -1,5 +1,4 @@
-#ifndef _ALLOCATOR_HPP
-#define _ALLOCATOR_HPP
+#pragma once
 
 #include <cstdlib>
 #include <limits>
@@ -173,4 +172,3 @@ namespace dimensium::allocation
 } // namespace dimensium::allocation
 
 
-#endif // _ALLOCATOR_HPP

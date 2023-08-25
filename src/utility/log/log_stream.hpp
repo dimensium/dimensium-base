@@ -23,7 +23,7 @@ namespace dimensium
             bool thread_exit_flag {false};
             std::mutex exit_flag_mutex;
 
-            std::jthread thread_listen {&LogStream::listen};
+            std::jthread thread_listen {&LogStream::listen, this};
             
             
             std::queue<LogMessage, std::list<LogMessage>> message_queue;

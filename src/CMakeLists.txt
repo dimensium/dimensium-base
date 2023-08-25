@@ -31,6 +31,7 @@ target_include_directories(
     dimensium_base PUBLIC
         ./
         ../lib/
+        ../lib/glm
 )
 
 # doesn't have a library now

@@ -1,5 +1,4 @@
-#ifndef _PRECOMPILE_HPP
-#define _PRECOMPILE_HPP
+#pragma once
 /*
     the file is touched for the Visual Studio's compile system.
 */
@@ -13,4 +12,3 @@
     #define dimensium_export
 #endif
 
-#endif // _PRECOMPILE_HPP

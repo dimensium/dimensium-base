@@ -12,3 +12,5 @@ Makefile
 /**/CMakeFiles
 /build
 /.vscode
+*.a
+*.o
