@@ -1,3 +1,6 @@
 [submodule "lib/libIntent"]
 	path = lib/libIntent
 	url = https://github.com/dimensium/libIntent.git
+[submodule "lib/glm"]
+	path = lib/glm
+	url = https://github.com/g-truc/glm.git
